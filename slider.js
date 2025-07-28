@@ -5,3 +5,12 @@ var splide = new Splide('.splide', {
   pagination: true,
   arrows: true,
 }); splide.mount();
+
+const menuSwitch = document.querySelector('.mobile-menu__switch');
+const menuLinks = document.querySelectorAll('.mobile-menu__link');
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        if (menuSwitch) menuSwitch.checked = false;
+    });
+});
