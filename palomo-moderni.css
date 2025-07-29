@@ -243,7 +243,7 @@ body {
 
 .splide {
     height: 650px;
-    max-height: 90vh;
+    max-height: 80vh;
     margin: 88px auto 0 auto;
     width: 100%;
     position: relative;
@@ -253,7 +253,7 @@ body {
 
 .splide__img{
     height: 650px;
-    max-height: 90vh;
+    max-height: 80vh;
     width: 100%;
     object-fit: cover;
 }
