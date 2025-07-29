@@ -928,14 +928,6 @@ body {
         min-width: 100%
     }
 
-    .farms__subtitle {
-        text-align: center;
-    }
-
-    .farms__text {
-        text-align: center;
-    }
-
     .news {
         scroll-margin-top: 76px;
     }
@@ -944,9 +936,12 @@ body {
         flex-direction: column;
     }
 
+    .news__title {
+        text-align: center;
+    }
+
     .news__left {
         order: 2;
-        text-align: center;
     }
 
     .news__right {
@@ -961,13 +956,12 @@ body {
         flex-direction: column;
     }   
 
-    .history__right {
+    .history__title {
         text-align: center;
     }
     
     .banner__tile {
         width: 100%;
-        text-align: center;
     }
 
     .banner__container::before {
@@ -977,22 +971,22 @@ body {
     .contact {
         scroll-margin-top: 76px;
     }
-
+    
     .contact__title {
         text-align: center;
     }
 
     .contact__top {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .contact__text{
         max-width: 100%;
-        text-align: center;
     }
 
 }
+
 @media (min-width: 576px) and (max-width: 767px) {
 
     .header__button {
@@ -1022,7 +1016,7 @@ body {
     .farms__tile {
         flex-direction: column;
         flex: 1;
-        min-width: 100%
+        min-width: 100%;
     }
 
     .news {
@@ -1031,6 +1025,10 @@ body {
 
     .news__container {
         flex-direction: column;
+    }
+
+    .news__title {
+        text-align: center;
     }
 
     .news__left {
@@ -1048,6 +1046,10 @@ body {
     .history__container {
         flex-direction: column;
     }   
+
+    .history__title {
+        text-align: center;
+    }
     
     .banner__tile {
         width: 100%
@@ -1059,6 +1061,10 @@ body {
 
     .contact {
         scroll-margin-top: 76px;
+    }
+
+    .contact__title {
+        text-align: center;
     }
 
     .contact__top {
@@ -1101,8 +1107,9 @@ body {
 
     .farms__tile {
         flex: 1;
-        min-width: 100%
+        min-width: 100%;
     }
+
 
     .news {
         scroll-margin-top: 76px;
@@ -1110,6 +1117,10 @@ body {
 
     .news__container {
         flex-direction: column;
+    }
+
+    .news__title {
+        text-align: center;
     }
 
     .news__left {
@@ -1128,8 +1139,16 @@ body {
         flex-direction: column;
     }
 
+    .history__title {
+        text-align: center;
+    }
+
     .contact {
         scroll-margin-top: 76px;
+    }
+
+    .contact__title {
+        text-align: center;
     }
 
     .contact__top {
@@ -1177,6 +1196,10 @@ body {
         flex-direction: column;
     }
 
+    .news__title {
+        text-align: center;
+    }
+
     .news__left {
         order: 2;
     }
@@ -1189,6 +1212,9 @@ body {
         flex-direction: column;
     }
 
+    .history__title {
+        text-align: center;
+    }
 
 
 
@@ -1290,4 +1316,3 @@ body {
         transform: scale(1.3);
     }
 }
-
