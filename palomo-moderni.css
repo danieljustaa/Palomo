@@ -928,6 +928,14 @@ body {
         min-width: 100%
     }
 
+    .farms__subtitle {
+        text-align: center;
+    }
+
+    .farms__text {
+        text-align: center;
+    }
+
     .news {
         scroll-margin-top: 76px;
     }
@@ -938,6 +946,7 @@ body {
 
     .news__left {
         order: 2;
+        text-align: center;
     }
 
     .news__right {
@@ -951,9 +960,14 @@ body {
     .history__container {
         flex-direction: column;
     }   
+
+    .history__right {
+        text-align: center;
+    }
     
     .banner__tile {
-        width: 100%
+        width: 100%;
+        text-align: center;
     }
 
     .banner__container::before {
@@ -964,23 +978,21 @@ body {
         scroll-margin-top: 76px;
     }
 
+    .contact__title {
+        text-align: center;
+    }
+
     .contact__top {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .contact__text{
         max-width: 100%;
+        text-align: center;
     }
-
-    .footer__tiles {
-        flex-direction: column;
-    }
-
-
 
 }
-
 @media (min-width: 576px) and (max-width: 767px) {
 
     .header__button {
