@@ -13,12 +13,12 @@
     <header class="header">
         <div class="header__container">
             <div class="header__left">
-                <a class="header__logo-href" href="https://palomo.cz">
-                    <img class="header__logo" src="images/palomo__transp__bg.png" alt="logo">
+                <a class="logo" href="https://palomo.cz">
+                    <img class="logo__image" src="images/palomo__transp__bg.png" alt="Palomo a.s. logo">
                 </a>
             </div>
             <div class="header__right">
-                <nav class="menu">
+                <nav class="menu" aria-label="Hlavní menu">
                     <ul class ="menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="#farmy">Naše farmy</a>
@@ -37,15 +37,15 @@
                         </li>
                     </ul>
                 </nav>
-                <a class="header__button" href="mailto:mail@zkusebnimail.cz">Napište nám</a>
-                <div class="header__mobile-menu">
+                <a class="button button--large button--hide" href="mailto:mail@zkusebnimail.cz">Napište nám</a>
+                <div class="mobile-menu">
                     <input class="mobile-menu__switch" id="mobile-menu__switch" type="checkbox">
-                    <label class="mobile-menu__icon" for="mobile-menu__switch">
-                        <span class="mobile-menu__top-line"></span>
-                        <span class="mobile-menu__middle-line"></span>
-                        <span class="mobile-menu__bottom-line"></span>
+                    <label class="mobile-menu__icon" for="mobile-menu__switch" aria-label="Otevřít mobilní menu">
+                        <span class="mobile-menu__line mobile-menu__line--top"></span>
+                        <span class="mobile-menu__line mobile-menu__line--middle"></span>
+                        <span class="mobile-menu__line mobile-menu__line--bottom"></span>
                     </label>
-                    <div class="mobile-menu__slide">
+                    <nav class="mobile-menu__nav" aria-label="Mobilní menu">
                         <ul class="mobile-menu__list">
                             <li class="mobile-menu__item">
                                 <a class="mobile-menu__link" href="#farmy">Naše farmy</a>
@@ -63,17 +63,15 @@
                                 <a class="mobile-menu__link" href="palomo-kariera.html">Pracuj u nás</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a class="mobile-menu__link--button" href="mailto:mail@zkusebnimail.cz">
-                                    <button class="mobile-menu__button">Napište nám</button>
-                                </a>
+                                <a class="button button--small" href="mailto:mail@zkusebnimail.cz">Napište nám</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
         <section class="splide" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -82,7 +80,7 @@
                         <div class="splide__banner">
                             <div class="splide__content">
                                 <span class="splide__text">LOREM IPSUM DOLOR SIT AMET CONSECTETUR</span>
-                                <a class="splide__button">Zjistit více</a>
+                                <a class="button button--large">Zjistit více</a>
                             </div>
                         </div>
                     </li>
@@ -91,7 +89,7 @@
                         <div class="splide__banner">
                             <div class="splide__content">
                                 <span class="splide__text">LOREM IPSUM DOLOR SIT AMET CONSECTETUR</span>
-                                <a class="splide__button">Zjistit více</a>
+                                <a class="button button--large">Zjistit více</a>
                             </div>
                         </div>
                     </li>
@@ -100,7 +98,7 @@
                         <div class="splide__banner">
                             <div class="splide__content">
                                 <span class="splide__text">LOREM IPSUM DOLOR SIT AMET CONSECTETUR</span>
-                                <a class="splide__button">Zjistit více</a>
+                                <a class="button button--large">Zjistit více</a>
                             </div>
                         </div>
                     </li>
@@ -110,58 +108,58 @@
         <section class="farms" id="farmy">
             <div class="farms__container">
                 <h2 class="farms__title">Naše farmy</h2>
-                <div class="farms__tiles">
-                    <article class="farms__tile">
-                        <div class="farms__tile-left">
-                            <img class="farms__image" src="images/blank-image-white.png" alt="">
+                <div class="farms__cards">
+                    <article class="farm-card">
+                        <div class="farm-card__left">
+                            <img class="farm-card__image" src="images/blank-image-white.png" alt="Farma Loštice">
                         </div>
-                        <div class="farms__tile-right">
-                            <h3 class="farms__subtitle">Farma Loštice</h3>
-                            <p class="farms__text">
+                        <div class="farm-card__right">
+                            <h3 class="farm-card__title">Farma Loštice</h3>
+                            <p class="farm-card__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima ratione cumque? Cupiditate accusamus esse quo dolorum sunt doloribus, aperiam magnam nostrum cumque, illum nihil deleniti omnis corrupti pariatur earum?
                             </p>
                         </div>
                     </article>
-                    <article class="farms__tile">
-                        <div class="farms__tile-left">
-                            <img class="farms__image" src="images/blank-image-white.png" alt="">
+                    <article class="farm-card">
+                        <div class="farm-card__left">
+                            <img class="farm-card__image" src="images/blank-image-white.png" alt="Farma Palonín">
                         </div>
-                        <div class="farms__tile-right">
-                            <h3 class="farms__subtitle">Farma Palonín</h3>
-                            <p class="farms__text">
+                        <div class="farm-card__right">
+                            <h3 class="farm-card__title">Farma Palonín</h3>
+                            <p class="farm-card__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima ratione cumque? Cupiditate accusamus esse quo dolorum sunt doloribus, aperiam magnam nostrum cumque, illum nihil deleniti omnis corrupti pariatur earum?
                             </p>
                         </div>
                     </article>
-                    <article class="farms__tile">
-                        <div class="farms__tile-left">
-                            <img class="farms__image" src="images/blank-image-white.png" alt="">
+                    <article class="farm-card">
+                        <div class="farm-card__left">
+                            <img class="farm-card__image" src="images/blank-image-white.png" alt="Farma Pavlov">
                         </div>
-                        <div class="farms__tile-right">
-                            <h3 class="farms__subtitle">Farma Pavlov</h3>
-                            <p class="farms__text">
+                        <div class="farm-card__right">
+                            <h3 class="farm-card__title">Farma Pavlov</h3>
+                            <p class="farm-card__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima ratione cumque? Cupiditate accusamus esse quo dolorum sunt doloribus, aperiam magnam nostrum cumque, illum nihil deleniti omnis corrupti pariatur earum?
                             </p>
                         </div>
                     </article>
-                    <article class="farms__tile">
-                        <div class="farms__tile-left">
-                            <img class="farms__image" src="images/blank-image-white.png" alt="">
+                    <article class="farm-card">
+                        <div class="farm-card__left">
+                            <img class="farm-card__image" src="images/blank-image-white.png" alt="Farma Moravičany">
                         </div>
-                        <div class="farms__tile-right">
-                            <h3 class="farms__subtitle">Farma Moravičany</h3>
-                            <p class="farms__text">
+                        <div class="farm-card__right">
+                            <h3 class="farm-card__title">Farma Moravičany</h3>
+                            <p class="farm-card__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima ratione cumque? Cupiditate accusamus esse quo dolorum sunt doloribus, aperiam magnam nostrum cumque, illum nihil deleniti omnis corrupti pariatur earum?
                             </p>
                         </div>
                     </article>
-                    <article class="farms__tile">
-                        <div class="farms__tile-left">
-                            <img class="farms__image" src="images/blank-image-white.png" alt="">
+                    <article class="farm-card">
+                        <div class="farm-card__left">
+                            <img class="farm-card__image" src="images/blank-image-white.png" alt="Farma Doubravice">
                         </div>
-                        <div class="farms__tile-right">
-                            <h3 class="farms__subtitle">Farma Doubravice</h3>
-                            <p class="farms__text">
+                        <div class="farm-card__right">
+                            <h3 class="farm-card__title">Farma Doubravice</h3>
+                            <p class="farm-card__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima ratione cumque? Cupiditate accusamus esse quo dolorum sunt doloribus, aperiam magnam nostrum cumque, illum nihil deleniti omnis corrupti pariatur earum?
                             </p>
                         </div>
@@ -185,13 +183,14 @@
                     </p>
                 </div>
                 <div class="news__right">
-                    <img class="news__image" src="images/blank-image-white.png" alt="firm image">
+                    <img class="news__image" src="images/blank-image-white.png" alt="Novinka">
                 </div>
+            </div>
         </section>
         <section class="history" id="historie">
             <div class="history__container">
                 <div class="history__left">
-                    <img class="history__image" src="images/blank-image-white.png" alt="firm image">
+                    <img class="history__image" src="images/blank-image-white.png" alt="Palomo a.s.">
                 </div>
                 <div class="history__right">
                     <h2 class="history__title">Historie</h2>
@@ -207,13 +206,13 @@
         </section>
         <section class="banner">
             <div class="banner__container">
-                <div class="banner__tile">
+                <div class="banner__box">
                     <h2 class="banner__title">Pracuj u nás!</h2>
                     <p class="banner__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni amet facere ipsa aspernatur ut laboriosam dicta odit, iure, non consectetur quibusdam dolores hic incidunt nihil, asperiores accusamus mollitia minus.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aperiam velit ipsa provident harum vitae? Reprehenderit possimus nisi, aliquam doloremque nulla ut quisquam, odit sit eos consequuntur officia nam quibusdam?
                     </p>
-                    <a class="banner__button" href="palomo-kariera.html">Kariéra</a>
+                    <a class="button button--large" href="palomo-kariera.html">Kariéra</a>
                 </div>
             </div>
         </section>
@@ -228,15 +227,15 @@
                         </p>
                     </div>
                     <div class="contact__right">
-                        <div class="contact__tile">
+                        <div class="contact__info-row">
                             <img class="contact__icon" src="images/location_on_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt="location icon">
-                            <address class="contact__adress">Palomo, a.s., Olomoucká 580/83 Loštice </address>
+                            <address class="contact__address">Palomo, a.s., Olomoucká 580/83 Loštice </address>
                         </div>
-                        <div class="contact__tile">
+                        <div class="contact__info-row">
                             <img class="contact__icon" src="images/call_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt="tel icon">
                             <a class="contact__tel" href="tel:+421777555007">+421 777 555 007</a>
                         </div>
-                        <div class="contact__tile">
+                        <div class="contact__info-row">
                             <img class="contact__icon" src="images/mail_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt="mail icon">
                             <a class="contact__email" href="mailto:mail@zkusebnimail.cz">mail@zkusebnimail.cz</a>
                         </div>
@@ -255,19 +254,19 @@
     </main>
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__main">
+            <div class="footer__top">
                 <a class="logo" href="https://palomo.cz">
-                    <img class="footer__image" src="images/white__logo.png" alt="logo">
+                    <img class="logo__image--small" src="images/white__logo.png" alt="Palomo a.s. logo">
                 </a>
-                <div class="footer__tiles">
-                    <div class="footer__tile">
+                <div class="footer__info-groups">
+                    <div class="footer__info-group">
                         <h3 class="footer__subtitle">Máte dotazy?</h3>
                         <a class="footer__tel" href="tel:+421777555007">+421 777 555 007</a>
                         <a class="footer__email" href="mailto:mail@zkusebnimail.cz">mail@zkusebnimail.cz</a>
                     </div>
-                    <div class="footer__tile">
-                        <span class="footer__name">Palomo, a.s.</span>
-                        <address class="footer__adress">Olomoucká 580/83 Loštice</address>
+                    <div class="footer__info-group">
+                        <strong class="footer__company-name">Palomo, a.s.</strong>
+                        <address class="footer__address">Olomoucká 580/83 Loštice</address>
                         <span class="footer__open-hours">Po-Pá 6:30 - 15:30</span>
                     </div>
                 </div>
@@ -289,5 +288,5 @@
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<script src="slider.js"></script>
+<script src="main.js"></script>
 </body>
