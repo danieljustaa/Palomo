@@ -12,62 +12,60 @@
     <header class="header">
         <div class="header__container">
             <div class="header__left">
-                <a class="header__logo-href" href="https://palomo.cz">
-                    <img class="header__logo" src="images/palomo__transp__bg.png" alt="logo">
+                <a class="logo" href="https://palomo.cz">
+                    <img class="logo__image" src="images/palomo__transp__bg.png" alt="Palomo a.s. logo">
                 </a>
             </div>
             <div class="header__right">
-                <nav class="menu">
+                <nav class="menu" aria-label="Hlavní menu">
                     <ul class ="menu__list">
                         <li class="menu__item">
-                            <a class="menu__link" href="index.html#farmy">Naše farmy</a>
+                            <a class="menu__link" href="palomo-moderni.html#farmy">Naše farmy</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href= "index.html#novinky">Novinky</a>
+                            <a class="menu__link" href= "palomo-moderni.html#novinky">Novinky</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="index.html#historie">Historie</a>
+                            <a class="menu__link" href="palomo-moderni.html#historie">Historie</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="index.html#kontakty">Kontakty</a>
+                            <a class="menu__link" href="palomo-moderni.html#kontakty">Kontakty</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="palomo-kariera.html">Pracuj u nás</a>
                         </li>
                     </ul>
                 </nav>
-                <a class="header__button" href="mailto:mail@zkusebnimail.cz">Napište nám</a>
-                <div class="header__mobile-menu">
+                <a class="button button--large button--hide" href="mailto:mail@zkusebnimail.cz">Napište nám</a>
+                <div class="mobile-menu">
                     <input class="mobile-menu__switch" id="mobile-menu__switch" type="checkbox">
-                    <label class="mobile-menu__icon" for="mobile-menu__switch">
-                        <span class="mobile-menu__top-line"></span>
-                        <span class="mobile-menu__middle-line"></span>
-                        <span class="mobile-menu__bottom-line"></span>
+                    <label class="mobile-menu__icon" for="mobile-menu__switch" aria-label="Otevřít mobilní menu">
+                        <span class="mobile-menu__line mobile-menu__line--top"></span>
+                        <span class="mobile-menu__line mobile-menu__line--middle"></span>
+                        <span class="mobile-menu__line mobile-menu__line--bottom"></span>
                     </label>
-                    <div class="mobile-menu__slide">
+                    <nav class="mobile-menu__nav" aria-label="Mobilní menu">
                         <ul class="mobile-menu__list">
                             <li class="mobile-menu__item">
-                                <a class="mobile-menu__link" href="index.html#farmy">Naše farmy</a>
+                                <a class="mobile-menu__link" href="palomo-moderni.html#farmy">Naše farmy</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a class="mobile-menu__link" href="index.html#novinky">Novinky</a>
+                                <a class="mobile-menu__link" href="palomo-moderni.html#novinky">Novinky</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a class="mobile-menu__link" href="index.html#historie">Historie</a>
+                                <a class="mobile-menu__link" href="palomo-moderni.html#historie">Historie</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a class="mobile-menu__link" href="index.html#kontakty">Kontakty</a>
+                                <a class="mobile-menu__link" href="palomo-moderni.html#kontakty">Kontakty</a>
                             </li>
                             <li class="mobile-menu__item">
                                 <a class="mobile-menu__link" href="palomo-kariera.html">Pracuj u nás</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a class="mobile-menu__link--button" href="mailto:mail@zkusebnimail.cz">
-                                    <button class="mobile-menu__button">Napište nám</button>
-                                </a>
+                                <a class="button button--small" href="mailto:mail@zkusebnimail.cz">Napište nám</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -79,7 +77,7 @@
                 <img class="intro__image" src="images/blank-image-white.png">
             </div>
         </section>
-        <section class="offer" id="kariera">
+        <section class="offer">
             <div class="offer__container">
                 <h2 class="offer__title">Volné pozice</h2>
                 <div class="offer__tiles">
@@ -148,19 +146,19 @@
     </main>
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__main">
+            <div class="footer__top">
                 <a class="logo" href="https://palomo.cz">
-                    <img class="footer__image" src="images/white__logo.png" alt="logo">
+                    <img class="logo__image--small" src="images/white__logo.png" alt="Palomo a.s. logo">
                 </a>
-                <div class="footer__tiles">
-                    <div class="footer__tile">
+                <div class="footer__info-groups">
+                    <div class="footer__info-group">
                         <h3 class="footer__subtitle">Máte dotazy?</h3>
                         <a class="footer__tel" href="tel:+421777555007">+421 777 555 007</a>
                         <a class="footer__email" href="mailto:mail@zkusebnimail.cz">mail@zkusebnimail.cz</a>
                     </div>
-                    <div class="footer__tile">
-                        <span class="footer__name">Palomo, a.s.</span>
-                        <address class="footer__adress">Olomoucká 580/83 Loštice</address>
+                    <div class="footer__info-group">
+                        <strong class="footer__company-name">Palomo, a.s.</strong>
+                        <address class="footer__address">Olomoucká 580/83 Loštice</address>
                         <span class="footer__open-hours">Po-Pá 6:30 - 15:30</span>
                     </div>
                 </div>
