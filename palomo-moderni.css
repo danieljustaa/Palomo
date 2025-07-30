@@ -170,6 +170,7 @@ body {
     opacity: 0;
     transition: max-height 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
     box-sizing: border-box;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
 }
 
 .mobile-menu__list {
@@ -235,8 +236,9 @@ body {
 }
 
 .mobile-menu__switch:checked ~ .mobile-menu__slide {
-    max-height: 500px;
+    max-height: 80vh;
     opacity: 1;
+    overflow-y: auto;
 }
 
 /* ======SLIDER====== */
@@ -617,6 +619,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
 }
 
 .banner__button:active {
@@ -707,10 +710,18 @@ body {
     text-decoration: none;
 }
 
+.contact__tel:active {
+    color: var(--color-primary);
+}
+
 .contact__email {
     font-family: var(--primary-font);
     color: var(--color-text);
     text-decoration: none;
+}
+
+.contact__email:active {
+    color: var(--color-primary)
 }
 
 .contact__form {
@@ -811,13 +822,20 @@ body {
     font-family: var(--primary-font);
     color: var(--color-white);
     text-decoration: none;
+}
 
+.footer__tel:active {
+    color: var(--color-primary);
 }
 
 .footer__email {
     font-family: var(--primary-font);
     color: var(--color-white);
     text-decoration: none;
+}
+
+.footer__email:active {
+    color: var(--color-primary);
 }
 
 .footer__tiles {
@@ -1307,9 +1325,25 @@ body {
         color: var(--color-primary);
     }
 
+    .contact__tel:hover {
+        color: var(--color-primary);
+    }
+
+    .contact__email:hover {
+        color: var(--color-primary);
+    }
+
     .contact__button:hover {
         background-color: var(--color-hover);
         transition: 0.3s ease;
+    }
+
+    .footer__tel:hover {
+        color: var(--color-primary);
+    }
+
+    .footer__email:hover {
+        color: var(--color-primary);
     }
 
     .footer__icon:hover {
