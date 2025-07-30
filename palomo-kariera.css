@@ -174,6 +174,7 @@ body {
     opacity: 0;
     transition: max-height 0.6s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
     box-sizing: border-box;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
 }
 
 .mobile-menu__list {
@@ -239,8 +240,9 @@ body {
 }
 
 .mobile-menu__switch:checked ~ .mobile-menu__slide {
-    max-height: 500px;
+    max-height: 80vh;
     opacity: 1;
+    overflow-y: auto;
 }
 
 
@@ -333,6 +335,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1em
+}
+
+.offer__time {
+    padding: 0.5em 0.5em;
+    color: var(--color-white);
+    font-family: var(--primary-font);
+    font-size: 1em;
+    display: inline-block;
+    max-width: max-content;
+}
+
+.offer__time--full {
+    background-color: var(--color-primary);
+}
+
+.offer__time--part {
+    background-color: #918f90;
 }
 
 .offer__text {
@@ -345,7 +365,8 @@ body {
 .offer__subtitle {
     font-family: var(--primary-font);
     color: var(--color-text);
-    margin-bottom: 1em;
+    font-size: 1.3em;
+    margin-bottom: 0;
     margin-top: 0;
 }
 
@@ -424,6 +445,7 @@ body {
     color: var(--color-primary);
 }
 
+
 /* ======STATEMENT====== */
 
 .statement {
@@ -442,6 +464,7 @@ body {
     font-family: var(--primary-font);
     font-size: 1em;
     margin: 0;
+    line-height: 1.5;
 }
 
 .statement__link {
@@ -449,10 +472,9 @@ body {
     font-family: var(--primary-font);
     font-size: 1em;
     text-decoration: none;
-    
 }
 
-.statement__link:hover {
+.statement__link:active {
     text-decoration: underline;
     transition: 0.2s ease;
 }
@@ -747,10 +769,23 @@ body {
         color: var(--color-primary);
     }
 
+    .statement__link:hover {
+        text-decoration: underline;
+        transition: 0.2s ease;
+    }
+
     .contact-banner__button:hover {
         background-color: var(--color-white);
         transition: 0.5s ease;
         border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+    }
+
+    .footer__tel:hover {
+        color: var(--color-primary);
+    }
+
+    .footer__email:hover {
         color: var(--color-primary);
     }
 
