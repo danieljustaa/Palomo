@@ -1101,6 +1101,11 @@ body {
         scroll-margin-top: 76px;
     }
 
+    .farm-card {
+        flex:1;
+        min-width: 100%;
+    }
+
     .news {
         scroll-margin-top: 76px;
     }
